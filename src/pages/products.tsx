@@ -20,8 +20,8 @@ function App() {
         }
         const response: ProductsResponse = await productApi.getAll(params)
         //  console.log('call api', response)
-
         setProductsResponse(response)
+
         //    productApi.getAll(params).then((response) => setProductsResponse(response))
       } catch (error) {
         console.log('Failed to fetch product list: ', error)
